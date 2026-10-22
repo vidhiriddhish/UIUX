@@ -1,0 +1,53 @@
+npm create vite@latest exp4 -- --template react
+cd exp4
+npm install
+npm install react-router-dom
+npm run dev 
+
+
+
+import React, { useState, useRef } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+function Home(props) {
+    const [count, setCount] = useState(0);
+    const input = useRef();
+
+    return (
+        <>
+            <h2>Hello, {props.name}</h2>
+
+            <button onClick={() => setCount(count + 1)}>
+                Count: {count}
+            </button>
+
+            <br /><br />
+            <input ref={input} placeholder="Enter text" />
+            <button onClick={() => alert(input.current.value)}>
+                Show
+            </button>
+
+            <ul>
+                {["HTML", "CSS", "React"].map(item =>
+                    <li key={item}>{item}</li>
+                )}
+            </ul>
+        </>
+    );
+}
+
+function About() {
+    return <h2>About Page</h2>;
+}
+
+export default function App() {
+    return (
+        <BrowserRouter>
+            <Link to="/">Home</Link> | <Link to="/about">About</Link>
+            <Routes>
+                <Route path="/" element={<Home name="Ram" />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </BrowserRouter>
+    );
+}
