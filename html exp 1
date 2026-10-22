@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Experiment</title>
+</head>
+<body>
+    <h1>Welcome to HTML</h1>
+    <p>This is a paragraph.</p>
+
+    <a href="https://www.google.com">Google</a><br>
+    <img src="image.jpg" alt="Sample Image" width="100">
+
+    <h3>List</h3>
+    <ul><li>HTML</li><li>CSS</li></ul>
+
+    <h3>Table</h3>
+    <table border="1">
+        <tr><th>Name</th><th>Age</th></tr>
+        <tr><td>Ram</td><td>20</td></tr>
+    </table>
+
+    <h3>Form</h3>
+    <form>
+        Name: <input type="text">
+        <input type="submit">
+    </form>
+
+    <h3>Frame</h3>
+    <iframe src="https://example.com" title="Example"
+            width="250" height="100"></iframe>
+
+    <h3>Audio and Video</h3>
+    <audio controls src="audio.mp3"></audio>
+    <video controls width="200" src="video.mp4"></video>
+</body>
+</html>
