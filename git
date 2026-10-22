@@ -1,0 +1,12 @@
+git config --global user.name "Student"
+git config --global user.email "student@example.com" 
+
+create a project
+mkdir exp8
+cd exp8 
+
+
+git init
+git add .
+git commit -m "First commit"
+git status
