@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Experiment</title>
+<style>
+    body {
+        background-color: lightyellow;
+        font-family: Arial;
+    }
+    h1 { color: blue; }
+    p { background: lightblue; padding: 10px; }
+    .box { color: green; }
+    #heading { text-align: center; }
+    a:hover { color: red; }
+    p::first-letter { font-size: 25px; }
+    ul { list-style-type: square; }
+    table { border-collapse: collapse; }
+    td, th { border: 1px solid black; padding: 8px; }
+</style>
+</head>
+<body>
+    <h1 id="heading">CSS Demo</h1>
+    <p>This is a styled paragraph.</p>
+    <p class="box">Class selector example.</p>
+    <a href="#">Move mouse here</a>
+    <ul><li>HTML</li><li>CSS</li></ul>
+    <table>
+        <tr><th>Name</th><th>Marks</th></tr>
+        <tr><td>Ram</td><td>90</td></tr>
+    </table>
+</body>
+</html>
